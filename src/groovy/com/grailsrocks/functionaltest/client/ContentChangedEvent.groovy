@@ -6,4 +6,8 @@ class ContentChangedEvent {
     String eventSource
     int statusCode
     Client client
+
+    def source = {->
+        return this.eventSource
+    }
 }
